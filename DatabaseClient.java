@@ -23,19 +23,46 @@ public class DatabaseClient {
 	}
 	
 	public static void findTopRatedApplications(Scanner in) {
-			
+		double rating;
+		PreparedStatement p = null;
+		PreparedStatement dbFetchResults = null;
+		PreparedStatement dbDeleteScreens = null;
+		
+		System.out.print("Enter the minimum average rating you'd like the applications to have: ");
+		rating = in.nextDouble();
 	}
 	
 	public static void makeApplicationSale(Scanner in) {
+		String appName;
+        int percent;
+		PreparedStatement p = null;
+		PreparedStatement dbFetchResults = null;
+		PreparedStatement dbDeleteScreens = null;
 		
+		System.out.print("Enter the name of the applicatoin you wish to put on sale: ");
+		appName = in.nextLine();
+        System.out.print("Enter the percentage of its original price you'd like to sell it for: ");
+        percent = in.nextInt();
 	}
 	
 	public static void findUserPostings(Scanner in) {
+        String email;
+		PreparedStatement p = null;
+		PreparedStatement dbFetchResults = null;
+		PreparedStatement dbDeleteScreens = null;
 		
+		System.out.print("Enter the email address of the account whose postings you'd like to see: ");
+        email = in.nextLine();
 	}
 	
 	public static void findGameAchievementScore(Scanner in) {
+        String email;
+		PreparedStatement p = null;
+		PreparedStatement dbFetchResults = null;
+		PreparedStatement dbDeleteScreens = null;
 		
+		System.out.print("Enter the email address of the account whose acheivement score you are interested in: ");
+        email = in.nextLine();
 	}
 
 	public static void main(String[] args) {
